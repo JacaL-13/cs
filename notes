@@ -1,0 +1,21 @@
+Results for the extraLargeArray
+insert 1.2264818 s
+append 3.6664 ms
+
+Results for the largeArray
+insert 13.6896 ms
+append 797.6 μs
+
+Results for the mediumArray
+insert 294.3 μs
+append 184.4 μs
+
+Results for the smallArray
+insert 70.6 μs
+append 247.8 μs
+
+Results for the tinyArray
+insert 220 μs
+append 196.3 μs
+
+insert is faster for only one result, the smallArray, then quickly becomes much slower. The append method scales much better. Insert will need to change the index of each value every time a value is added.
